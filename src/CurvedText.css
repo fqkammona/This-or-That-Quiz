@@ -1,0 +1,12 @@
+/* At the top of your CSS file, before other rules */
+@font-face {
+    font-family: 'Namecat';
+    src: url('./fonts/namecat/Namecat.ttf') format('truetype');
+  }
+  
+  .red-curved-text {
+    font-family: 'Namecat', sans-serif;
+    color: red;
+    font-size: 64px;
+  }
+  
