@@ -1,0 +1,61 @@
+.answer-section {
+  margin-top: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Wrap items to the next line if necessary */
+  gap: 30px; /* Add space between the cards */
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.note-card h3 {
+  font-size: 2.5em; /* Bigger text size, adjust as needed */
+  color: black; /* Black color */
+  margin: auto; /* Reset margins */
+  text-align: center; /* Ensure the text is centered */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Align text vertically */
+  justify-content: center; /* Align text horizontally */
+  position: relative; /* Needed to apply z-index */
+  z-index: 20; /* Higher than the z-index of the pseudo-elements */
+}
+
+.note-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-card:before {
+  content: '';
+  position: absolute;
+  top: 30px; /* Adjust this value to position the red line */
+  left: 0;
+  right: 0;
+  height: 2px; /* Height of the gold line */
+  background-color: gold; /* Red color */
+  z-index: 10;
+}
+
+.note-card:after {
+  content: '';
+  position: absolute;
+  top: 45px; /* Starting position of the blue lines */
+  left: 0;
+  right: 0;
+  bottom: 5px; /* Space from the bottom */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    black, /*  0000FF Blue color */
+    black 1px, /* 0000FF Height of the blue line */
+    transparent 1px,
+    transparent 20px /* Spacing between blue lines */
+  );
+  z-index: 5;
+}

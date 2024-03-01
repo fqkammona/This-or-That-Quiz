@@ -2,8 +2,50 @@
     font-family: 'Namecat';
     src: url('../fonts/namecat/Namecat.ttf') format('truetype'); /* Update the path to where you've stored your font file */
   }
+  
+  /* Assuming .game is a direct child of <body> */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Use this only if you want to vertically center `.game` in the viewport */
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('../background/IOWA-IconPattern-Black.jpg'); /* Update the path to your image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Optional, based on desired effect */
+  }
 
-  
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  height: auto;
+  margin: auto; /* Adjust for horizontal centering */
+  border: 1px solid #ddd; /* Add a subtle border around the box */
+  border-radius: 5px; /* Optional: round the corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  padding: 50px; /* Add padding inside the box */
+  width: auto; /* Adjust the width as needed */
+  max-width: 1200px;
+}
 
+  /* Additional responsive adjustments for the .game container */
+  @media (max-width: 1000px) {
+    .game {
+      padding: 20px; /* Add padding on smaller screens */
+      margin: 30px; /* Adjust margin on smaller screens */
+    }
+  }
+
+  .question-text{
+    font-size: 64px;
+    color: gray ;
+    color: gold ;
+    font-family: 'Namecat', 'sans-serif';
+  }
   
-  
+ 

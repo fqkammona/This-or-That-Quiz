@@ -1,4 +1,18 @@
 .app {
-  color: red;
+  position: relative; /* Ensure the pseudo-element is positioned relatively to this container */
+  color: blue;
+  min-height: 100vh;
+  z-index: 0;
+  overflow: hidden; /* In case the image causes any overflow */
 }
 
+.app::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position it absolutely within the .app container */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.01; /* Adjust for desired transparency */
+  z-index: -1; /* Position it behind the content */
+}

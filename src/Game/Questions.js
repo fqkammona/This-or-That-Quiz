@@ -1,30 +1,19 @@
 export const Questions = [
-    {
-		Qtext: 'This or That',
-		Aoptions: [
-			{ Atext: 'Computers', major: 'ECE' },
-        	{ Atext: 'People', major: "BME" },
-      ],
-    },
-    {
-		Qtext: 'This or That',
-      	Aoptions: [
-			{ Atext: 'Roads', major: 'ECE' },
-        	{ Atext: 'Bones', major: 'BME' },
-      	],
-    },
-    {
-		Qtext: 'This or That',
-		Aoptions: [
-			{ Atext: 'Math', major: 'ECE' },
-			{ Atext: 'nah', major: 'BME' },
-		],
+	{
+	  Qtext: 'Talking to people',
+	  Major: ['ECE', 'BME'], // Corrected to array syntax
 	},
 	{
-		Qtext: 'This or That',
-		Aoptions: [
-			{ Atext: 'Not', major: 'ECE' },
-			{ Atext: 'Sleep', major: 'BME' },
-		],
+		Qtext: 'Good at Math',
+		Major: ['ECE'], // Corrected to array syntax
+	},
+	{
+		Qtext: 'Good at Chem',
+		Major: ['CHEM'], // Corrected to array syntax
+	},
+	{
+		Qtext: 'Bad at Math',
+		Major: ['ME'], // Corrected to array syntax
 	},
   ];
+  
